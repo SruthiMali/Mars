@@ -99,10 +99,14 @@
     <Compile Include="AcceptanceTest\AddLanguage_ScenarioOutline.cs" />
     <Compile Include="AcceptanceTest\AddLanguage_WithoutLanguageLevel.cs" />
     <Compile Include="AcceptanceTest\AddSkills.cs" />
+    <Compile Include="AcceptanceTest\AddSkill_WithoutSkillLevel.cs" />
     <Compile Include="AcceptanceTest\Add_DuplicateLanguage.cs" />
+    <Compile Include="AcceptanceTest\Add_DuplicateSkill.cs" />
     <Compile Include="AcceptanceTest\CancelLanguage.cs" />
+    <Compile Include="AcceptanceTest\CancelSkill.cs" />
     <Compile Include="AcceptanceTest\DeleteLanguage.cs" />
     <Compile Include="AcceptanceTest\EditLanguage.cs" />
+    <Compile Include="AcceptanceTest\EditSkill.cs" />
     <Compile Include="ProfileSkills.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
