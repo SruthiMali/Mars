@@ -31,3 +31,9 @@ Scenario: Check if user could able to Edit a Skill
 	Given I clicked on the Skill tab under the Profile 
 	When I Cancel a skill
 	Then that skill should not get displayed in my listings
+
+	@mytag
+Scenario: Check if user could able to Delete a Skill
+	Given I clicked on the Skill tab under the Profile page
+	When I delete a Skill
+	Then that Skill should not get displayed on my listings

@@ -95,18 +95,40 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AcceptanceTest\AddCertification.cs" />
+    <Compile Include="AcceptanceTest\AddCertification_BlankFielda.cs" />
+    <Compile Include="AcceptanceTest\AddEducation.cs" />
+    <Compile Include="AcceptanceTest\AddEducation_BlankFields.cs" />
     <Compile Include="AcceptanceTest\AddLanguage.cs" />
     <Compile Include="AcceptanceTest\AddLanguage_ScenarioOutline.cs" />
     <Compile Include="AcceptanceTest\AddLanguage_WithoutLanguageLevel.cs" />
     <Compile Include="AcceptanceTest\AddSkills.cs" />
     <Compile Include="AcceptanceTest\AddSkill_WithoutSkillLevel.cs" />
+    <Compile Include="AcceptanceTest\Add_DuplicateCertification.cs" />
+    <Compile Include="AcceptanceTest\Add_DuplicateEducation.cs" />
     <Compile Include="AcceptanceTest\Add_DuplicateLanguage.cs" />
     <Compile Include="AcceptanceTest\Add_DuplicateSkill.cs" />
+    <Compile Include="AcceptanceTest\CancelCertification.cs" />
     <Compile Include="AcceptanceTest\CancelLanguage.cs" />
     <Compile Include="AcceptanceTest\CancelSkill.cs" />
+    <Compile Include="AcceptanceTest\DeleteCertification.cs" />
+    <Compile Include="AcceptanceTest\DeleteEducation.cs" />
     <Compile Include="AcceptanceTest\DeleteLanguage.cs" />
+    <Compile Include="AcceptanceTest\DeleteSkill.cs" />
+    <Compile Include="AcceptanceTest\EditCertification.cs" />
+    <Compile Include="AcceptanceTest\EditEducation.cs" />
     <Compile Include="AcceptanceTest\EditLanguage.cs" />
     <Compile Include="AcceptanceTest\EditSkill.cs" />
+    <Compile Include="AcceptanceTest\ProfileEducation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileEducation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileCertifications.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileCertifications.feature</DependentUpon>
+    </Compile>
     <Compile Include="ProfileSkills.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -121,11 +143,19 @@
     <Compile Include="Utils\Start.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AcceptanceTest\ProfileEducation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ProfileEducation.feature.cs</LastGenOutput>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="AcceptanceTest\SpecFlowFeature1.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ProfileCertifications.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ProfileCertifications.feature.cs</LastGenOutput>
     </None>
     <None Include="ProfileSkills.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

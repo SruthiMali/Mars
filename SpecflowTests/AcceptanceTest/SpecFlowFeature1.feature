@@ -40,7 +40,8 @@ Scenario: Check if user could able to Edit a language
 	When I edit a new language
 	Then that language should get displayed on my listings
 
-	Scenario: Check if user could able to Cancel while adding a language
+@mytag
+Scenario: Check if user could able to Cancel while adding a language
 	Given I clicked on the Language tab under the Profile 
 	When I Cancel a language
 	Then that language should not get displayed in my listings
@@ -51,5 +52,5 @@ Scenario: Check if user could able to Delete a language
 	When I delete a language
 	Then that language should not get displayed on my listings
 
-
+	
 
